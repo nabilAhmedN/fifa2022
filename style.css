@@ -73,8 +73,8 @@ h3 {
 }
 
 .content-area{
-    display: grid;
-    grid-template-columns: 250 1fr;
+ display: grid;
+    grid-template-columns: 250px 1fr;
     column-gap: 20px;
     padding-top: 50px;
 }
@@ -101,4 +101,43 @@ h3 {
 .menu a:hover{
     background-color: #DD0000;
     color: #fff;
+}
+.blogs-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.blog-card{
+    border-radius: 10px;
+    border: 1px solid #E8E8E8;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px #E8E8E8;
+}
+.blog-card:hover{
+    box-shadow: 10px 10px 20px #ddd;
+}
+.blog-card:hover .blog-btn{
+    background-color: #161616;
+    border-radius: 5px;
+    color: #fff;
+}
+.blog-cont{
+    padding: 15px;
+}
+.blog-btn{
+    padding: 5px 15px;
+    cursor: pointer;
+    /* color: #161616; */
+}
+.blog-cont h3{
+    margin: 10px 0px;
+    font-weight: 700;   
+}
+.blog-ex{
+    font-weight: 500;
+    margin-top: 15px;
+}
+.blog-ex span{
+    margin-right: 20px;
 }
