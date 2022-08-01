@@ -164,7 +164,8 @@ footer{
     color: #fff;
 }
 .foot-menu a:hover{
-    color: aquamarine;
+    /* color: aquamarine; */
+    color: #f0725c;
 }
 ul{
     list-style: none;
@@ -187,5 +188,6 @@ li {
     color: #fff;
 }
 .social:hover{
-    color: aquamarine;
+    /* color: aquamarine; */
+    color: #f0725c;
 }
