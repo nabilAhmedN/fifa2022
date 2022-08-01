@@ -141,3 +141,7 @@ h3 {
 .blog-ex span{
     margin-right: 20px;
 }
+
+tab-view{
+    display: none;
+}
