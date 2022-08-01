@@ -142,6 +142,50 @@ h3 {
     margin-right: 20px;
 }
 
-tab-view{
+.tab-view{
     display: none;
+}
+
+footer{
+    background-color: #161616;
+    margin-top: 30px;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+.foot-head{
+    margin: 50px 0px;
+}
+.foot-menu{
+    border-top: #939393 1px solid;
+}
+.foot-menu a{
+    font-weight: 400;
+    color: #fff;
+}
+.foot-menu a:hover{
+    color: aquamarine;
+}
+ul{
+    list-style: none;
+    margin: 20px auto;
+    text-align: center;
+}
+li {
+    display: inline-block;
+    margin: 20px;
+    color: #fff;
+}
+
+.social-link{
+    margin: 30px 0px;
+}
+.social {
+    padding: 5px;
+    font-size: 20px;
+    margin: 0px 10px;
+    color: #fff;
+}
+.social:hover{
+    color: aquamarine;
 }
