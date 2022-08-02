@@ -166,6 +166,20 @@ h3 {
 }
 
 
+.groupTop{
+    text-align: center;
+}
+.groupTop p{
+    color: #978888;
+}
+.groupTop h1{
+    padding-top: 15px;
+}
+.groupName {
+    border-top: #E8E8E8 1px solid;
+    padding-top: 20px;
+}
+
 
 /* footer section */
 footer{
