@@ -6,7 +6,7 @@
 
 body{
     padding-top: 20px;
-    font-family: 'Josefin Sans', sans-serif;;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 img{
@@ -27,6 +27,7 @@ h3 {
     margin: 0 auto;
 }
 
+/* ---- start header section ---- */
 .head-cont{
     background-color: #161616;
     color: aliceblue;
@@ -48,7 +49,7 @@ h3 {
     margin: 20px 0px;
     /* line-height: 3px; */
 }
-.head-btn{
+.head-btn, .view-btn{
     background-color: #DD0000;
     color: aliceblue;
     font-weight: 500;
@@ -71,13 +72,17 @@ h3 {
     width: 100%;
     /* height: 100%; */
 }
+/* ---- end header section ---- */
 
+/* ---- start main content section ---- */
 .content-area{
  display: grid;
     grid-template-columns: 250px 1fr;
     column-gap: 20px;
     padding-top: 50px;
 }
+
+/* ---- start menu section ---- */
 .menu{
     display: flex;
     flex-direction: column;
@@ -105,6 +110,9 @@ h3 {
 .menu .active{
     border: none;
 }
+/* ---- end menu section ---- */
+
+/* ---- start blog area ---- */
 .blogs-area{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -116,6 +124,7 @@ h3 {
     border: 1px solid #E8E8E8;
     overflow: hidden;
     box-shadow: 5px 5px 10px #E8E8E8;
+    cursor: pointer;
 }
 .blog-card:hover{
     box-shadow: 10px 10px 20px #ddd;
@@ -144,11 +153,13 @@ h3 {
 .blog-ex span{
     margin-right: 20px;
 }
+/* ---- end blog area ---- */
 
 .tab-view{
     display: none;
 }
 
+/* ---- start css for upMatch ---- */
 .upcomeMatch{
     padding: 20px 30px;
     text-align: center;
@@ -165,7 +176,7 @@ h3 {
     margin-bottom: 15px;
 }
 
-
+/* ---- css for allGroups ---- */
 .groupTop{
     text-align: center;
 }
@@ -200,8 +211,7 @@ footer{
     color: #fff;
 }
 .foot-menu a:hover{
-    color: aquamarine;
-    /* color: #f0725c; */
+    color: orangered;
 }
 ul{
     list-style: none;
@@ -228,7 +238,7 @@ li {
     /* color: #f0725c; */
 }
 
-
+/* ---- Small devices ---- */
 @media only screen and (max-width: 767px) {
     body {
         padding-top: 0px;
@@ -254,7 +264,7 @@ li {
         text-overflow: ellipsis;
     }
 
-    .head-btn {
+    .head-btn, .view-btn {
         margin: 0 auto;
     }
 
@@ -302,5 +312,66 @@ li {
 
     .menu a {
         border: 1px solid #E8E8E8;
+    }
+}
+
+
+/* ---- Medium devices ---- */
+@media only screen and (min-width: 768px) and (max-width: 991.98px){
+    body {
+        padding-top: 0px;
+    }
+    .container{
+        width: 100%;
+    }
+    .head-cont{
+        padding: 50px;
+        height: max-content;
+    }
+    .head-info{
+        width: 50%;
+    }
+    .head-info{
+        display: flex;
+        justify-content: center;
+    }
+    .head-model{
+        width: 30%;
+        padding-top: 50px;
+        margin-bottom: -50px;
+    }
+    .content-area{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+        padding-top: 50px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        height: fit-content;
+        background-color: #fff;
+
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .menu a {
+        border: 1px solid #E8E8E8;
+        width: 33%;
+    }
+    .blogs-area{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+        padding: 20px;
+    }
+    .tab-view{
+        display: block;
+        margin: 0 auto;
+        width: 200px;
     }
 }
