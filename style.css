@@ -47,7 +47,7 @@ h3 {
 
 .head-info p{
     margin: 20px 0px;
-    /* line-height: 3px; */
+    /* line-height: 25px; */
 }
 .head-btn, .view-btn{
     background-color: #DD0000;
@@ -259,9 +259,11 @@ li {
     }
 
     .head-info p {
+        /* letter-spacing: 10px; */
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        line-height: 50px;
     }
 
     .head-btn, .view-btn {
@@ -340,6 +342,10 @@ li {
         padding-top: 50px;
         margin-bottom: -50px;
     }
+    .head-cont img{
+        transform: translateX(100px) scale(140%);
+    }
+    
     .content-area{
         display: grid;
         grid-template-columns: 1fr;
